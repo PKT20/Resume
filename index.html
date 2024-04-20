@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Taing's Online Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="social-icons">
+                <!-- Icons would be added here -->
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Hello,<br>I am Kevin Taing</h1>
+            <p>Here you will find all the highlights of my life</p>
+            <nav class="navigation">
+                <a href="#professional-summary" class="nav-button">Professional Summary</a>
+                <a href="#work-experience" class="nav-button">Work Experience</a>
+                <a href="#education" class="nav-button">Education</a>
+                <a href="#skills" class="nav-button">Skills & Certificates</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Professional Summary Section -->
+    <section id="professional-summary" class="content-section">
+        <h2>Professional Summary</h2>
+        <p>Dedicated IT support specialist with over 3 years of experience in diverse IT environments. Expertise in supporting a wide range of computer software, hardware, peripherals, and networks. Adept at providing first and second-level support, ensuring high dependability, and excellent communication skills to facilitate complex technical solutions and enhance user satisfaction.</p>
+    </section>
+    
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="content-section">
+        <h2>Work Experience</h2>
+        <div class="experience-entry">
+            <h3>Heritage Realty Group — IT Technician</h3>
+            <p>Phnom Penh, Cambodia | OCT 2022 – NOV 2023</p>
+            <ul>
+                <li>Responded to IT support requests promptly, ensuring effective resolution of software and hardware issues for desktops, laptops, IP phones, and mobile devices.</li>
+                <li>Installed, configured, and maintained computer systems, achieving high levels of user satisfaction and performance.</li>
+                <li>Collaborated with IT team members to diagnose network problems, enhancing system efficiency and reliability.</li>
+                <li>Provided critical support for Windows and Mac OS platforms, resolving issues via phone and remote access tools.</li>
+                <li>Logged all activities accurately using a ticket tracking system.</li>
+            </ul>
+        </div>
+        <!-- Additional work entries -->
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="content-section">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>Southern New Hampshire University</h3>
+            <p>Manchester, NH</p>
+            <p>Master of Science in Information Systems in Information Management</p>
+        </div>
+        <div class="education-entry">
+            <h3>Salem State University</h3>
+            <p>Salem, MA</p>
+            <p>Bachelor’s degree in computer science</p>
+        </div>
+    </section>
+    
+    <!-- Skills & Certificates Section -->
+    <section id="skills" class="content-section">
+        <h2>Skills & Certificates</h2>
+        <p>Skills: Microsoft Office (Excel, PowerPoint) | Office 365 | SharePoint | Microsoft Windows 10/11 | MacOS | Remote App | Customer Service | POS Support | Active Directory | Regression Analysis | Analytical Thinking | Problem-Solving | Detail-Orientated | Computer Hardware | Network Support | Software Troubleshooting</p>
+    </section>
+ 
+   <!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <footer>
+        <p>© 2024 Kevin Taing. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Scroll to Top Button -->
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+</body>
+</html>

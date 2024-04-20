@@ -1,0 +1,181 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4em;
+}
+
+.left-column, .right-column {
+    flex-basis: 50%;
+}
+/* Existing styles */
+
+.content-section {
+    background-color: #ffffff; /* White background for content sections */
+    color: #333333; /* Dark text for readability */
+    padding: 2em;
+    margin-top: 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow for depth */
+}
+.experience-entry {
+    background-color: #ffffff;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.experience-entry h3 {
+    margin-top: 0;
+}
+
+.experience-entry p {
+    font-style: italic;
+    color: #555;
+}
+
+.experience-entry ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.experience-entry li {
+    margin-bottom: 0.5em;
+}
+.education-entry {
+    margin-bottom: 1em;
+}
+
+.education-entry h3 {
+    font-size: 1.25em;
+    color: #333;
+}
+
+.education-entry p {
+    margin: 0.25em 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Skills section might benefit from a more structured list format */
+#skills p {
+    margin-top: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* If you want to separate the skills with bullets instead of pipes */
+#skills p::after {
+    content: '•';
+    margin: 0 5px;
+}
+
+/* Remove the last bullet */
+#skills p:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 400px; /* Adjust the size of the photo as necessary */
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.social-icons {
+    /* Placeholder for social icons */
+}
+
+.right-column {
+    padding-left: 4em; /* Space between the columns */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.nav-button {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2em;
+}
+.summary-section {
+    background-color: #ffffff; /* White background for the summary section */
+    color: #333333; /* Dark text for readability */
+    padding: 2em;
+    margin-top: 2em;
+}
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0.20em;
+    background-color: #000;
+    color: #fff;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+/* ... existing styles ... */
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;  /* Hidden by default */
+    position: fixed;  /* Fixed/sticky position */
+    bottom: 55px;  /* Place the button 20px above the bottom of the viewport */
+    right: 30px;  /* Place the button 30px from the right */
+    z-index: 99;  /* Make sure it does not overlap with other elements */
+    border: none;  /* No border */
+    outline: none;  /* Remove outline */
+    background-color: #000;  /* Set a background color */
+    color: white;  /* Text color */
+    cursor: pointer;  /* Add a mouse pointer on hover */
+    padding: 10px 15px;  /* Padding to make the button larger and easier to tap on mobile */
+    border-radius: 50%;  /* Circular shape */
+    font-size: 24px;  /* Larger font size for visibility */
+    line-height: 20px;  /* Adjust line height to center the arrow vertically */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;  /* Add a dark-grey background on hover */
+}
+
+
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-column, .right-column {
+        flex-basis: 100%;
+    }
+
+    .right-column {
+        padding-left: 0;
+    }
+
+    .nav-button {
+        display: block;
+        margin: 0.5em auto;
+    }
+}
